@@ -1,7 +1,13 @@
 {
   "expo": {
     "name": "ChatApp",
+    "icon":"./assets/chat.png",
     "slug": "ChatApp",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,10 +23,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.johhnsnoow.ChatApp",
+      "buildNumber": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+     "android": {
+      "package": "com.johhnsnoow.ChatApp",
+      "versionCode": 1
     }
   }
 }
